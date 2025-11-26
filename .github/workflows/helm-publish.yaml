@@ -1,0 +1,35 @@
+name: Publish Helm Chart
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: v3.12.0
+
+      - name: Package Helm Chart
+        run: |
+          helm package ./my-githubactions-app
+          mv *.tgz docs/
+
+      - name: Update Helm Repo Index
+        run: |
+          helm repo index docs --url https://SaifKbishi.github.io/devops_githubpages
+
+      - name: Commit and Push
+        run: |
+          git config user.name "SaifKbishi"
+          git config user.email "allansaifson@gmail.com"
+          git add docs/
+          git commit -m "Update Helm chart"
+          git push

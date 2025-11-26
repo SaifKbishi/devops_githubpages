@@ -12,5 +12,5 @@ COPY --from=builder /usr/local/bin /usr/local/bin
 #COPY /app/app.py .
 COPY app/ /app/
 
-EXPOSE 5008
+EXPOSE 5006
 CMD ["python", "/app/app.py"]

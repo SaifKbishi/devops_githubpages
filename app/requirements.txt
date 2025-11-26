@@ -1,1 +1,5 @@
-flask
+# Web framework
+Flask==2.3.2
+
+# JavaScript engine for Python
+#pythonmonkey==0.4.0

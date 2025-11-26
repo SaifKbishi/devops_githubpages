@@ -1,18 +1,26 @@
-# My Flask Docker App
+# My GitHub Actions App 
 ## Overview
 A simple Flask application containerized with Docker, demonstrating multiple routes and basic web functionalities.
+Hosted in GitHub pages and managed by GitHub Actions.
 
 ## Features
 - Flask server with multiple routes
 - Dockerized for easy deployment
 - non-Responsive HTML templates
 - Environment configuration management
+- Helm package
+- Github Actions
+_ Github Pages
 
 ## Technologies
 - Python 3.10-slim
 - Flask
 - Docker
 - HTML
+- K8s
+- Helm
+- GiHub Actions
+- GitHub pages
 
 ## Getting Started
 
@@ -26,7 +34,7 @@ Build and Run the Project:
 - In your terminal, navigate to the project directory and run:
 - Clone the repository
 ```bash
-    git clone https://github.com/SaifKbishi/devops_finalproject
+    git clone https://github.com/SaifKbishi/devops_githubpages.git
     cd devops_finalproject
 ```
 ```bash

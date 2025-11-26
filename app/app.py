@@ -1,7 +1,10 @@
 # app.py
-print("hello from multistage docker")
 from flask import Flask, jsonify, render_template
+#import pythonmonkey as pm
 
+#result = pm.eval("console.log('Hello from JavaScript!'); 'Returned value';")
+#print(result)
+print("hello from multistage docker")
 
 app = Flask(__name__)
 
@@ -33,4 +36,4 @@ def get_data():
     return jsonify(sample_data)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5008, debug=True)
+    app.run(host='0.0.0.0', port=5006, debug=True)

@@ -4,7 +4,7 @@ services:
   web:
     build: .
     ports:
-      - "5008:5008"
+      - "5006:5006"
     env_file:
       - .env
     volumes:

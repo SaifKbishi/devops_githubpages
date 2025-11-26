@@ -3,7 +3,7 @@ entries:
   my-githubactions-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-11-26T22:37:41.4903866+02:00"
+    created: "2025-11-26T22:42:39.2137874+02:00"
     description: A Helm chart for Kubernetes
     digest: cf14b69dbfc8adcc57fd5d7c4a6d02cfbcddaf41e2445beec5c07d3a6fd04dfb
     name: my-githubactions-app
@@ -11,4 +11,4 @@ entries:
     urls:
     - https://SaifKbishi.github.io/devops_githubpages/my-githubactions-app-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-26T22:37:41.4875753+02:00"
+generated: "2025-11-26T22:42:39.2117111+02:00"
